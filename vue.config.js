@@ -1,3 +1,5 @@
-require('./config')
-console.log('.. ..')
-module.exports = {}
+const pages = require('./config')
+
+module.exports = {
+  pages: pages
+}
