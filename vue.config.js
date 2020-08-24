@@ -1,5 +1,6 @@
 const pages = require('./config')
 
 module.exports = {
-  pages: pages
+  pages: pages,
+  assetsDir: 'assets'
 }
