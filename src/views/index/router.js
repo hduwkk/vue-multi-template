@@ -15,9 +15,11 @@ const routes = [
     component: require('@/components/main/text').default
   }
 ]
+
+console.log('router base', process.env.BASE_URL)
 const router = new Router({
-  mode: 'history',
-  base: process.env.BASE_URL,
+  mode: 'hash',
+  // base: process.env.BASE_URL,
   routes
 })
 
