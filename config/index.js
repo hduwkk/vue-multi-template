@@ -1,8 +1,7 @@
 const fs = require('fs')
 const path = require('path')
-const glob = require('glob')
 const viewsPath = path.join(process.cwd(), './src/views')
-const reg = new RegExp(viewsPath + '/([^/]+)/main.js')
+const reg = new RegExp(viewsPath + `/([^/]+)/main.js`)
 
 var argv = require('minimist')(process.argv.slice(2))
 console.log(argv, 'argv', viewsPath)
@@ -15,15 +14,18 @@ const pages = {
   }
 }
 
-glob.sync(path.join(viewsPath, '**/main.js')).forEach(dir => {
-  const result = dir.match(reg)
-  let chunk
-  result && (chunk = result[1])
-  if (chunk && chunk !== 'index') {
-    pages[chunk] = {
-      entry: `src/views/${chunk}/main.js`,
-      template: `src/views/${chunk}/index.html`,
-      filename: chunk + '.html'
+const dirs = fs.readdirSync(viewsPath)
+console.log(dirs, 'dirs')
+console.log('reg', reg)
+dirs.forEach(dir => {
+  if (
+    dir !== 'index' &&
+    fs.existsSync(path.join(process.cwd(), `./src/views/${dir}/main.js`))
+  ) {
+    pages[dir] = {
+      entry: `src/views/${dir}/main.js`,
+      template: `src/views/${dir}/index.html`,
+      filename: dir + '.html'
     }
   }
 })
