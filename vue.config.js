@@ -14,7 +14,8 @@ module.exports = {
             minChunks: 2,
             maxInitialRequests: 5,
             minSize: 0,
-            priority: -10
+            priority: -10,
+            reuseExistingChunk: true
           }
         }
       })
