@@ -1,5 +1,6 @@
 <template>
   <div style="width: 160px; margin: 0 auto;">
+    <h3>安全区域_啥都不处理</h3>
     <h1>1px</h1>
     <div class="button">origin</div>
     <div class="button border-bottom">origin-bottom</div>
@@ -23,6 +24,10 @@
     <div class="button btn-border-bottom">下边</div>
     <br />
     <div class="button btn-border-left">左边</div>
+    <div class="area area-top">上面上面上面上面上面上面</div>
+    <div class="area area-bottom">下面下面下面下面下面下面</div>
+    <div class="area area-right">右边右边右边右边右边右边</div>
+    <div class="area area-left">左边左边左边左边左边左边</div>
   </div>
 </template>
 <script>
@@ -37,6 +42,10 @@ export default {
 <style lang="scss">
 $borderColor: #666;
 $color: #666;
+#app {
+  position: relative;
+  overflow: hidden;
+}
 .button {
   box-sizing: border-box;
   text-align: center;
@@ -273,6 +282,43 @@ $color: #666;
         transform-origin: 0 0;
       }
     }
+  }
+}
+
+.area {
+  line-height: 20px;
+  font-size: 14px;
+  text-align: center;
+  position: absolute;
+  color: #fff;
+  padding: 10px;
+  &-top {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: rgba(8, 141, 37, 0.548);
+  }
+  &-bottom {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: rgba(155, 189, 5, 0.521);
+  }
+  &-left {
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 100%;
+    background-color: rgba(128, 4, 4, 0.466);
+  }
+  &-right {
+    right: 0;
+    top: 0;
+    width: 20px;
+    height: 100%;
+    background-color: rgba(4, 31, 107, 0.5);
   }
 }
 </style>

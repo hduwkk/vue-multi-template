@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 <template>
   <div>
     <h1>文字</h1>
