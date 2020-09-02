@@ -1,5 +1,4 @@
 const pages = require('./config')
-console.log(process.env, 'env')
 module.exports = {
   pages: pages,
   assetsDir: 'assets',

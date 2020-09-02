@@ -16,7 +16,6 @@ const pages = {
 
 const dirs = fs.readdirSync(viewsPath)
 console.log(dirs, 'dirs')
-console.log('reg', reg)
 dirs.forEach(dir => {
   if (
     dir !== 'index' &&
