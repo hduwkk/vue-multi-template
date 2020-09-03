@@ -1,34 +1,40 @@
 <template>
   <div class="grid">
-    <svg
-      width="135"
-      height="45"
-      viewBox="0 0 90 90"
-      preserveAspectRadio="xMin YMin meet"
-    >
-      <rect x="0" y="0" width="45" height="45"></rect>
+    <svg width="200" height="250" viewBox="0 0 64 80">
+      <rect x="10" y="35" width="40" height="40"></rect>
+      <polyline points="10 35, 30 10, 50 35" />
+      <polyline points="25 75, 25 60, 35 60, 35 75" />
     </svg>
-    <svg
-      width="135"
-      height="45"
-      viewBox="0 0 90 90"
-      preserveAspectRadio="xMin meet"
-    >
-      <rect x="0" y="0" width="45" height="45"></rect>
-    </svg>
-    <svg width="135" height="45">
-      <rect x="0" y="0" width="45" height="45"></rect>
-      <!-- <rect x="120" y="0" width="100" height="60"></rect> -->
+    <svg class="color-blue" width="200" height="250" viewBox="0 0 80 80">
+      <rect x="10" y="35" width="40" height="40"></rect>
+      <polyline points="10 35, 30 10, 50 35" />
+      <polyline points="25 75, 25 60, 35 60, 35 75" />
     </svg>
   </div>
 </template>
+<script>
+export default {
+  methods: {
+    clickA(e) {
+      console.log(e, 'e')
+    }
+  }
+}
+</script>
 <style>
+.box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000;
+}
 svg {
   stroke: rgb(0, 0, 0);
   stroke-width: 1px;
   stroke-linecap: round;
   stroke-linejoin: round;
   fill: none;
-  background-color: #eee;
+}
+.color-blue {
+  color: rgb(5, 5, 85);
 }
 </style>

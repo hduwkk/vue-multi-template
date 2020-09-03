@@ -26,6 +26,7 @@ body {
 }
 .grid::before {
   content: '';
+  pointer-events: none;
   box-sizing: border-box;
   border-left: 1px solid #7c7cea;
   position: absolute;
@@ -37,6 +38,7 @@ body {
 }
 .grid::after {
   content: '';
+  pointer-events: none;
   border-top: 1px solid #7c7cea;
   box-sizing: border-box;
   position: absolute;
