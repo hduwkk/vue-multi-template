@@ -1,0 +1,47 @@
+<svg id="el_L8TmeeZLS" viewBox="0 0 188 188">
+  <defs>
+    <linearGradient id="hn98218erh1209ej2" x1="94" y1="40.02" x2="94" y2="86.22" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6edaff"></stop>
+      <stop offset="1" stop-color="#4291cc"></stop>
+    </linearGradient>
+    <linearGradient id="hn98218erh1209ej2-2" x1="94" y1="115.05" x2="94" y2="150.15" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffd7a3"></stop>
+      <stop offset="1" stop-color="#ff9d5a"></stop>
+    </linearGradient>
+    <linearGradient id="hn98218erh1209ej2-3" x1="94" y1="109.89" x2="94" y2="130.77" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffd"></stop>
+      <stop offset="1" stop-color="#ffda88"></stop>
+    </linearGradient>
+  </defs>
+  <g id="el_Xp_PyNBql4_an_3_nzZK0mA" data-animator-group="true" data-animator-type="0">
+    <g id="el_Xp_PyNBql4">
+      <g id="el_Gy_7IR5E7u_an_mGuaKGrD1" data-animator-group="true" data-animator-type="0">
+        <g id="el_Gy_7IR5E7u_an_rboEv3fxl" data-animator-group="true" data-animator-type="1">
+          <path id="el_Gy_7IR5E7u" d="M81.91 109.21a16.12 16.12 0 1 0-32.24 0v22.91z"></path>
+        </g>
+      </g>
+      <g id="el_laSwFbnWNX_an_fm100bL9Q" data-animator-group="true" data-animator-type="0">
+        <g id="el_laSwFbnWNX_an_K1NbcJi1e" data-animator-group="true" data-animator-type="1">
+          <path id="el_laSwFbnWNX" d="M106.09 109.21a16.12 16.12 0 1 1 32.24 0v22.91z"></path>
+        </g>
+      </g>
+      <path id="el_oNGLZWCG3c"
+        d="M94 34.7S69.95 47.47 69.95 85.76v2.8a21.28 21.28 0 0 1 16.59 19.25 1.62 1.62 0 0 0 1.62 1.51h11.7a1.62 1.62 0 0 0 1.62-1.51 21.28 21.28 0 0 1 16.59-19.25v-2.8C118.05 47.47 94 34.7 94 34.7zM94 72a9.16 9.16 0 1 1 9.16-9.16A9.16 9.16 0 0 1 94 72z">
+      </path>
+      <g id="el_T76h9P5z52_an_epxqrweU8" data-animator-group="true" data-animator-type="2">
+        <g id="el_T76h9P5z52">
+          <g id="el__jBKPDpXc5_an_4emh1-KEE" data-animator-group="true" data-animator-type="2">
+            <path
+              d="M103.35 116.86a16.62 16.62 0 0 0-18.7 0c-3.52 2.42-6.69 6.57-6.69 13.7 0 16 16 28.47 16 28.47s16-12.44 16-28.47c.04-7.13-3.09-11.29-6.61-13.7z"
+              id="el__jBKPDpXc5"></path>
+          </g>
+          <g id="el_IIKYHXvUje_an_eOvDnBdvW" data-animator-group="true" data-animator-type="2">
+            <path
+              d="M98.86 118.07a8.63 8.63 0 0 0-9.71 0 8.08 8.08 0 0 0-3.47 7.11C85.67 133.52 94 140 94 140s8.33-6.46 8.33-14.79a8.08 8.08 0 0 0-3.47-7.14z"
+              id="el_IIKYHXvUje"></path>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
