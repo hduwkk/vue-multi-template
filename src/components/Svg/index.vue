@@ -12,7 +12,7 @@
     </svg>
     <div class="box"></div> -->
     <!-- 猫 -->
-    <svg width="140" height="170">
+    <!-- <svg width="140" height="170">
       <title>Cat</title>
       <desc>这是一只猫呀</desc>
       <circle cx="70" cy="95" r="50" style="stroke: #000; fill: none;"></circle>
@@ -38,7 +38,13 @@
       <path d="M10 110 C 20 140, 40 140, 50 110" stroke="black" />
       <path d="M70 110 C 70 140, 110 140, 110 110" stroke="black" />
       <path d="M130 110 C 120 140, 180 140, 170 110" stroke="black" />
-    </svg>
+    </svg> -->
+    <!-- <svg style="stroke-width: 2px;" width="200" height="200" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+      <line stroke-dasharray="5, 5" x1="10" y1="10" x2="190" y2="10" />
+      <text stroke-dasharray="50%, 50%" style="stroke: red; font-size: 100px;;" x="30" y="100">
+        你i
+      </text>
+    </svg> -->
   </div>
 </template>
 <script>
