@@ -1,22 +1,27 @@
 <template>
-  <div>
-    <svg class="s1" width="700" height="700" viewBox="0 0 400 400"
-      xmlns="http://www.w3.org/2000/svg">
-      <line x1="50" y1="10" x2="250" y2="10" />
-      <line stroke-dasharray="10%" x1="0" y1="20" x2="500" y2="20" />
-      <def>
-        <text id="text0" x="30" y="100">
-          我你爹
+  <div
+    class="container"
+    :class="{ playing: isPlaying, paused: !isPlaying }"
+    @click="clickHandle"
+  >
+    <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+      <!-- <line x1="0" y1="10" x2="300" y2="10" />
+      <line stroke-dasharray="10%" x1="0" y1="20" x2="300" y2="20" /> -->
+      <symbol id="text0">
+        <text x="0" y="35%">
+          iab
         </text>
-      </def>
-      <g id="bbq">
-        <use class="text ta" xlink:href="#text0" />
-        <use class="text tb" xlink:href="#text0" />
-        <use class="text tc" xlink:href="#text0" />
-        <use class="text td" xlink:href="#text0" />
-        <use class="text te" xlink:href="#text0" />
+        <text x="0" y="70%">
+          你好啊啊
+        </text>
+      </symbol>
+      <g>
+        <use class="text" xlink:href="#text0" />
+        <use class="text" xlink:href="#text0" />
+        <use class="text" xlink:href="#text0" />
+        <use class="text" xlink:href="#text0" />
+        <use class="text" xlink:href="#text0" />
       </g>
-      <!-- <use xlink:href="#bbq" x="30" y="100" /> -->
     </svg>
   </div>
 </template>
@@ -24,67 +29,112 @@
 export default {
   data() {
     return {
-      offset: 942.4777
+      isPlaying: true
     }
   },
-  created() {
-    window.cc = this
+  methods: {
+    clickHandle() {
+      this.isPlaying = !this.isPlaying
+    }
   }
 }
 </script>
 <style>
-html,
-body {
-  background-color: #fff;
+.container {
+  height: 100vh;
+  user-select: none;
 }
-.s1 {
+svg {
+  width: 100%;
+  height: 100%;
   stroke-width: 1px;
   fill: none;
-  background-color: #eee;
+  background-color: #000;
 }
 line {
   stroke: black;
-  stroke-width: 2;
+  stroke-width: 1px;
 }
 
-.text {
+text {
   font-size: 100px;
   font-family: cursive;
+}
+.text {
   fill: none;
   stroke: white;
   stroke-dashoffset: 0;
   stroke-dasharray: 0 100%;
-  stroke-width: 2px;
+  stroke-width: 1px;
 }
-.ta {
+
+.text:nth-child(1) {
   stroke: #360745;
-  stroke-dasharray: 10px 40px;
+  animation: dasharray1 8s ease-in-out forwards;
 }
-.tb {
+.text:nth-child(2) {
   stroke: #d61c59;
-  stroke-dasharray: 10px 40px;
-  stroke-dashoffset: 10px;
+  animation: dasharray2 8s ease-in-out forwards;
 }
-.tc {
+.text:nth-child(3) {
   stroke: #e7d84b;
-  stroke-dasharray: 10px 40px;
-  stroke-dashoffset: 20px;
+  animation: dasharray3 8s ease-in-out forwards;
 }
-.td {
+.text:nth-child(4) {
   stroke: #efeac5;
-  stroke-dasharray: 10px 40px;
-  stroke-dashoffset: 30px;
+  animation: dasharray4 8s ease-in-out forwards;
 }
-.te {
+.text:nth-child(5) {
   stroke: #1b8798;
-  stroke-dasharray: 10px 40px;
-  stroke-dashoffset: 40px;
+  animation: dasharray5 8s ease-in-out forwards;
 }
-@keyframes abc {
+
+.playing .text {
+  animation-play-state: running;
+}
+.paused .text {
+  animation-play-state: paused;
+}
+
+@keyframes dasharray {
   50%,
   70% {
-    stroke-dasharray: 10 10;
-    stroke-dashoffset: 10;
+    stroke-dasharray: 7% 28%;
+  }
+}
+@keyframes dasharray1 {
+  50%,
+  70% {
+    stroke-dasharray: 7% 28%;
+    stroke-dashoffset: 7%;
+  }
+}
+@keyframes dasharray2 {
+  50%,
+  70% {
+    stroke-dasharray: 7% 28%;
+    stroke-dashoffset: 14%;
+  }
+}
+@keyframes dasharray3 {
+  50%,
+  70% {
+    stroke-dasharray: 7% 28%;
+    stroke-dashoffset: 21%;
+  }
+}
+@keyframes dasharray4 {
+  50%,
+  70% {
+    stroke-dasharray: 7% 28%;
+    stroke-dashoffset: 28%;
+  }
+}
+@keyframes dasharray5 {
+  50%,
+  70% {
+    stroke-dasharray: 7% 28%;
+    stroke-dashoffset: 35%;
   }
 }
 </style>

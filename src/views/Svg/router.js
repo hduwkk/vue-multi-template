@@ -7,6 +7,8 @@ const Svg2 = () =>
   import(/* webpackChunkName: "Svg2" */ '@/components/Svg/svg2')
 const Svg3 = () => import(/* webpackChunkName: "Svg3" */ '@/components/Svg/s3')
 const S1 = () => import(/* webpackChunkName: "S1" */ '@/components/Svg/s1')
+const Ratio = () =>
+  import(/* webpackChunkName: "ratio" */ '@/components/Svg/ratio')
 Vue.use(Router)
 
 const routes = [
@@ -14,6 +16,10 @@ const routes = [
     path: '/',
     name: 'svgindex',
     component: SvgIndex
+  },
+  {
+    path: '/radio',
+    component: Ratio
   },
   {
     path: '/s2',
