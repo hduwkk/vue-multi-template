@@ -14,7 +14,7 @@ body {
 body {
   margin: 0;
 }
-.grid {
+/* .grid {
   position: relative;
   box-sizing: border-box;
   width: 750px;
@@ -46,5 +46,5 @@ body {
   right: 0;
   left: 0;
   height: 500px;
-}
+} */
 </style>
