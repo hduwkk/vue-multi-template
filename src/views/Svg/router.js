@@ -11,6 +11,12 @@ const Path = () =>
   import(/* webpackChunkName: "spath" */ '@/components/Svg/path')
 const Ratio = () =>
   import(/* webpackChunkName: "ratio" */ '@/components/Svg/ratio')
+const Group = () =>
+  import(/* webpackChunkName: "Group" */ '@/components/Svg/group')
+const Anime0 = () =>
+  import(/* webpackChunkName: "Anime0" */ '@/components/Svg/anime-0')
+const Anime1 = () =>
+  import(/* webpackChunkName: "Anime1" */ '@/components/Svg/anime-1')
 Vue.use(Router)
 
 const routes = [
@@ -22,6 +28,18 @@ const routes = [
   {
     path: '/ratio',
     component: Ratio
+  },
+  {
+    path: '/group',
+    component: Group
+  },
+  {
+    path: '/anime0',
+    component: Anime0
+  },
+  {
+    path: '/anime1',
+    component: Anime1
   },
   {
     path: '/s2',
